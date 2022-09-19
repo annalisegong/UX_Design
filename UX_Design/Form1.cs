@@ -45,7 +45,7 @@ namespace UX_Design
 
 			//need to figure out a substitute for exponent operator since C# does not have one
 			monthlyPay = loanAmt * (i(i + 1) ^ n / ((1 + i) ^ n) - 1);
-			lblDisplayMP = monthlyPay;
+			lblDisplayMP.Text = Convert.ToString(monthlyPay);
 		}
 	}
 }

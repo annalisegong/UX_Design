@@ -81,6 +81,7 @@
 			// 
 			// textBox1
 			// 
+			this.textBox1.BackColor = System.Drawing.SystemColors.Control;
 			this.textBox1.Location = new System.Drawing.Point(147, 234);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(226, 23);
@@ -89,6 +90,7 @@
 			// 
 			// textBox2
 			// 
+			this.textBox2.BackColor = System.Drawing.SystemColors.Control;
 			this.textBox2.Location = new System.Drawing.Point(147, 295);
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(226, 23);
@@ -97,6 +99,7 @@
 			// 
 			// textBox3
 			// 
+			this.textBox3.BackColor = System.Drawing.SystemColors.Control;
 			this.textBox3.Location = new System.Drawing.Point(147, 359);
 			this.textBox3.Name = "textBox3";
 			this.textBox3.Size = new System.Drawing.Size(226, 23);
@@ -134,6 +137,7 @@
 			// lblDisplayMP
 			// 
 			this.lblDisplayMP.AutoSize = true;
+			this.lblDisplayMP.BackColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.lblDisplayMP.Location = new System.Drawing.Point(235, 155);
 			this.lblDisplayMP.Name = "lblDisplayMP";
 			this.lblDisplayMP.Size = new System.Drawing.Size(13, 15);
