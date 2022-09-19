@@ -93,6 +93,7 @@
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(226, 23);
 			this.textBox2.TabIndex = 7;
+			this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
 			// 
 			// textBox3
 			// 
@@ -100,6 +101,7 @@
 			this.textBox3.Name = "textBox3";
 			this.textBox3.Size = new System.Drawing.Size(226, 23);
 			this.textBox3.TabIndex = 8;
+			this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
 			// 
 			// lblLoamAmt
 			// 
@@ -118,6 +120,7 @@
 			this.btnCompute.TabIndex = 10;
 			this.btnCompute.Text = "Compute";
 			this.btnCompute.UseVisualStyleBackColor = true;
+			this.btnCompute.Click += new System.EventHandler(this.btnCompute_Click);
 			// 
 			// lblMP
 			// 
@@ -133,8 +136,9 @@
 			this.lblDisplayMP.AutoSize = true;
 			this.lblDisplayMP.Location = new System.Drawing.Point(235, 155);
 			this.lblDisplayMP.Name = "lblDisplayMP";
-			this.lblDisplayMP.Size = new System.Drawing.Size(0, 15);
+			this.lblDisplayMP.Size = new System.Drawing.Size(13, 15);
 			this.lblDisplayMP.TabIndex = 12;
+			this.lblDisplayMP.Text = "$";
 			// 
 			// Form1
 			// 
