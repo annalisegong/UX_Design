@@ -14,7 +14,7 @@ namespace UX_Project
 		}
 
 		public void display(String username)
-		{A
+		{
 			Console.WriteLine("Welcome " + username);
 			Console.WriteLine("Compute Monthly Payments");
 			Console.WriteLine("Current Monthly Payments");
