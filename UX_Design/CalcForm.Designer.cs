@@ -1,6 +1,6 @@
 ﻿namespace UX_Design
 {
-	partial class Form1
+	partial class CalcForm
 	{
 		/// <summary>
 		///  Required designer variable.

@@ -1,17 +1,17 @@
 using System.Collections;
+using System.Security.Cryptography.X509Certificates;
 
 namespace UX_Design
 {
-	public partial class Form1 : Form
+	public partial class CalcForm : Form
 	{
-		int loanTerm;
-		double loanAmt;
-		double intRate;
-		double monthlyPay;
+		private int loanTerm;
+		private double loanAmt;
+		private double intRate;
 
         ArrayList pastPayments = new ArrayList();
 
-        public Form1()
+        public CalcForm()
 		{
 			InitializeComponent();
 		}
@@ -37,20 +37,26 @@ namespace UX_Design
 		{
 			//assigns intRate the user input from txtbox
 			intRate = Convert.ToDouble(Console.ReadLine());
+			
 		}
 
 		private void btnCompute_Click(object sender, EventArgs e)
 		{
 			double monthlyPay;
-			//calculates interest by dividing the interest rate by 12
 			double i = intRate / 12;
-			//calculates the number of payments over loans lifetime by dividing loan term by 12
+			
 			double n = loanTerm * 12;
+			
+			double y = 1 + i;
 
-			//need to figure out a substitute for exponent operator since C# does not have one
-			monthlyPay = loanAmt * (i(i + 1) ^ n / ((1 + i) ^ n) - 1);
-			lblDisplayMP.Text = Convert.ToString(monthlyPay);
-            pastPayments.Add(monthlyPay);
+			/*for(double x = 0; x < n; x++)
+			{
+				y = y * (i + 1);
+			}*/
+			monthlyPay = loanAmt * (i*(Math.Pow(y, n)) / (Math.Pow(y, n) - 1));
+            //monthlyPay = loanTerm * (i*y / (y - 1));
+            lblDisplayMP.Text = Convert.ToString(monthlyPay);
+            //pastPayments.Add(monthlyPay);
         }
 	}
 }

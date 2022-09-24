@@ -18,10 +18,10 @@ namespace UX_Project
 			//main heading for past payments page
 			Console.WriteLine("Past Monthly Payments");
 
-			for (int i = 0; i <= pastPayments.length(); i++) // need to find equivalent method to .length()
+			/*for (int i = 0; i <= pastPayments.length(); i++) // need to find equivalent method to .length()
 			{
 				Console.WriteLine(pastPayments[i]);
-			}
+			}*/
 		}
 	}
 }
