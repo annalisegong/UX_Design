@@ -1,10 +1,10 @@
-using System.Collections;
+﻿using System.Collections;
 using UX_Design;
 
-namespace UX_Project
+namespace UX_Design
 {
-	internal static class Main
-	{
-	
-	}
+    internal static class Main
+    {
+
+    }
 }

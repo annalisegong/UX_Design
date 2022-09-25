@@ -18,17 +18,25 @@ namespace UX_Design
         public LoginForm()
         {
             InitializeComponent();
-            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            username = Console.ReadLine();
+            username = textBox1.Text;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            password = Console.ReadLine();
+            password = textBox2.Text;
+        }
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            //HomePage hp = new HomePage();
+            //hp.Show();
+            CalcForm c = new CalcForm();
+            c.Show();
         }
     }
 }

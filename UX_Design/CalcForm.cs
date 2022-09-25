@@ -9,8 +9,9 @@ namespace UX_Design
 		private int loanTerm;
 		private double loanAmt;
 		private double intRate;
+        double monthlyPay;
 
-        ArrayList pastPayments = new ArrayList();
+       // ArrayList pastPayments = new ArrayList();
 
         public CalcForm()
 		{
@@ -41,23 +42,24 @@ namespace UX_Design
 			
 		}
 
-		private void btnCompute_Click(object sender, EventArgs e)
+		/*private void btnCompute_Click(object sender, EventArgs e)
 		{
-			double monthlyPay;
 			double i = intRate / 12;
-			
 			double n = loanTerm * 12;
-			
 			double y = 1 + i;
-
-			/*for(double x = 0; x < n; x++)
-			{
-				y = y * (i + 1);
-			}*/
 			monthlyPay = loanAmt * (i*(Math.Pow(y, n)) / (Math.Pow(y, n) - 1));
-            //monthlyPay = loanTerm * (i*y / (y - 1));
-            lblDisplayMP.Text = Convert.ToString(monthlyPay);
+            txtDisplayMP.Text = Convert.ToString(String.Format("{0:$.##}",monthlyPay));
+            //pastPayments.Add(monthlyPay);
+        }*/
+
+		private void btnCompute_Click_1(object sender, EventArgs e)
+		{
+            double i = intRate / 12;
+            double n = loanTerm * 12;
+            double y = 1 + i;
+            monthlyPay = loanAmt * (i * (Math.Pow(y, n)) / (Math.Pow(y, n) - 1));
+            txtDisplayMP.Text = Convert.ToString(String.Format("{0:$.##}", monthlyPay));
             //pastPayments.Add(monthlyPay);
         }
-	}
+    }
 }

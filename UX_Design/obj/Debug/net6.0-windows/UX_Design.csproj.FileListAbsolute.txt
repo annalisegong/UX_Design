@@ -16,3 +16,4 @@ C:\Users\anna gong\source\repos\annalisegong\UX_Design\UX_Design\obj\Debug\net6.
 C:\Users\anna gong\source\repos\annalisegong\UX_Design\UX_Design\obj\Debug\net6.0-windows\ref\UX_Design.dll
 C:\Users\anna gong\Source\Repos\annalisegong\UX_Design\UX_Design\obj\Debug\net6.0-windows\UX_Design.CalcForm.resources
 C:\Users\anna gong\Source\Repos\annalisegong\UX_Design\UX_Design\obj\Debug\net6.0-windows\UX_Design.LoginForm.resources
+C:\Users\anna gong\Source\Repos\annalisegong\UX_Design\UX_Design\obj\Debug\net6.0-windows\UX_Design.HomePage.resources
