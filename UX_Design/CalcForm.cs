@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Drawing.Design;
 using System.Security.Cryptography.X509Certificates;
 
 namespace UX_Design
@@ -24,19 +25,19 @@ namespace UX_Design
 		private void textBox1_TextChanged(object sender, EventArgs e)
 		{
 			//assigns loanAmt the user input from txtbox
-			loanAmt = Convert.ToDouble(Console.ReadLine());
+			loanAmt = Convert.ToDouble(textBox1.Text);
 		}
 
 		private void textBox2_TextChanged(object sender, EventArgs e)
 		{
 			//assigns loanTerm the user input from txtbox
-			loanTerm = Convert.ToInt32(Console.ReadLine());
+			loanTerm = Convert.ToInt32(textBox2.Text);
 		}
 
 		private void textBox3_TextChanged(object sender, EventArgs e)
 		{
 			//assigns intRate the user input from txtbox
-			intRate = Convert.ToDouble(Console.ReadLine());
+			intRate = Convert.ToDouble(textBox3.Text);
 			
 		}
 
