@@ -61,5 +61,30 @@ namespace UX_Design
             txtDisplayMP.Text = Convert.ToString(String.Format("{0:$.##}", monthlyPay));
             //pastPayments.Add(monthlyPay);
         }
-    }
+
+		private void lblWelcome_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void panel3_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void label1_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void lblMP_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
